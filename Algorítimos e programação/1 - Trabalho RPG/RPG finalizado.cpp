@@ -18,7 +18,7 @@ int main()
     cout << "\n\n1 - Arco";
     cout << "\n2 - Espada e Escudo";
 
-    cout << "\n\nEscolha a sua arma:\n"; //SUBSTITUIR
+    cout << "\n\nEscolha a sua arma:\n";
     cin >> arma;
 
     if (arma == 1) {
@@ -31,7 +31,7 @@ int main()
         cout << "Ótima escolha, sua arma é excelente para te proteger de ataques de longa distância, dessa forma é possível se aproximar do alvo e dar um golpe fatal...\n";
     }
 
-//CENTAURO
+    //CENTAURO
 
 	cout << "\nApós andar alguns metros, uma parede se fechou atrás de você, assim impedindo-o de voltar. Logo afrente, o corredor se abre em uma sala.\nEm seu centro, uma criatura mística: um centauro, metade homem, metade cavalo. Sua cabeça virada para baixo, parece estar meditando."; 
 	cout << "\nAo dar alguns passos a frente ele levanta sua cabeça, e também seu arco, atirando uma flecha certeira em sua direção. Seu treinamento toma conta, e você se esquiva no último momento, escondendo-se atrás de um pilar da sala. Você precisa lutar.";
@@ -90,11 +90,13 @@ int main()
         cout << "\n\nCom a fera atordoada da investida, você aproveita a abertura e corre em direção a saída. \nApós alguns momentos percorrendo o corredor você ouve um rugido, a fera mostrando sua frustação de sua presa ter escapado.";		
 	}
 
-	cout << "\n\nDados alguns minutos de caminhada, o corredor se abre em duas direções: \n"; //AUTOMATONS - JARDIM COM FRUTAS
+    //AUTOMATONS - JARDIM COM FRUTAS
+	cout << "\n\nDados alguns minutos de caminhada, o corredor se abre em duas direções: \n"; 
 	cout << "1 - Esquerda\n2 - Direita\n\n";
 	cin >> escolhaOut;
 
-	if (escolhaOut == 1) { //AUTOMATONS
+    //AUTOMATONS
+	if (escolhaOut == 1) { 
 		cout << "\n\nVocê segue pela esquerda. Lentamente pelo caminho, pequenas engrenagens e peças metálicas aparecem pelo chão. Após mais alguns momentos de caminhada você chega numa sala aberta, em seu centro uma criatura mecânica, imóvel a não ser por suas engrenagens.";
         cout << "\nAo se aproximar, a criatura mecânica ativa, seus quatro braços metálicos revelando lâminas em suas pontas. Em seu peito, uma luminosa esfera de cristal azul.";
 		cout << "\n1 - Tentar despedaçar os membros da criatura\n";
@@ -139,12 +141,14 @@ int main()
             cout << "\nVocê pega o cristal.";
 		}
 		
-		cout << "\n\nAo seguir o caminho da saída logo duas escolhas se mostram:\n"; //AUTOMATONS > PAREDES QUE FECHAM - LAGO
+        //AUTOMATONS > PAREDES QUE FECHAM - LAGO
+		cout << "\n\nAo seguir o caminho da saída logo duas escolhas se mostram:\n"; 
 		cout << "1 - Esquerda\n2 - Direita\n";
 		cout << "Qual caminho você vai seguir?\n";
 		cin >> escolhaIn;
 
-		if (escolhaIn == 1) {// AUTOMATONS > PAREDES QUE FECHAM
+        // AUTOMATONS > PAREDES QUE FECHAM
+		if (escolhaIn == 1) {
 			cout << "\n\nVocê segue pela esquerda. Logo, encontra-se em uma sala quase vazia, salvo pelo pedestal em seu centro. A entrava se fecha atrás de você. A sala treme, e as paredes começam a se fechar.";
 			cout << "\nVocê rapidamente inspeciona o pedestal: ele é simples, possui somente um encaixe para algo esférico.";
             cout << "\n1 - Procurar algo pela sala";
@@ -191,7 +195,8 @@ int main()
 			}
 		}
 
-		else if (escolhaIn == 2) {//AUTOMATONS > LAGO
+        //AUTOMATONS > LAGO
+		else if (escolhaIn == 2) {
             cout << "\nVocê decide seguir sua intuição novamente e segue pela direita.";
             cout << "\nChegando na próxima sala percebe que está completamente vazia, apenas uma sala circular com uma poça de água no meio e pilares em sua volta.";
             cout << "\nA porta de entrada então se fecha e você segue para o centro da sala.";
@@ -201,7 +206,8 @@ int main()
 		}
 	}
 
-	else if (escolhaOut == 2){ //JARDIM EXOTICO
+    //JARDIM EXOTICO
+	else if (escolhaOut == 2){ 
         cout << "\nGuiado pelos seus instintos você escolheu o caminho da direita.\nApós andar mais pelos corredores escuros você escuta ao fundo o cantar de pássaros e vê uma luz surgindo ao fundo do caminho.";
         cout << "\nAo final do caminho você chega em uma sala que mantinha um belo jardim, com árvores lindas e frutas saborosas.";
         cout << "\nVocê continua a andar. Ao centro do jardim vê um senhor sentado em uma cadeira velha segurando uma cesta com frutas.";
@@ -237,13 +243,6 @@ int main()
             }
         }
         
-        // else {
-        //     cout << "\nAo não escolher uma fruta o senhor repete as palavras da estrutura de pedra e então revela sua identidade\nEle na verdade é Morfeus a entidade dos sonhos";
-        //     cout << "\nEntão te chama de ingrato e o prende no mundo dos sonhos, onde nunca mais vai sair";
-        //     cout << "\nÉ o fim da sua jornada...\n";
-        //     return 0;
-        // }
-        
         //JARDIM EXOTICO > POÇA - PLANTA CARNIVORA
         cout << "\nAo sair do jardim a porta se fecha às suas costas.\nAndando mais alguns metros encontra-se outra escolha:";
         cout << "\nÀ direita você vê um brilho azulado.\nÀ esquerda sente uma leve brisa.";
@@ -251,7 +250,8 @@ int main()
         cout << "\nEscolha um caminho: ";
         cin >> escolhaIn; 
         
-        if (escolhaIn == 1) { //JARDIM EXOTICO > POÇA
+        //JARDIM EXOTICO > POÇA
+        if (escolhaIn == 1) {
             cout << "\nVocê decide seguir sua intuição novamente e segue o brilho.";
             cout << "\nChegando na próxima sala percebe que está completamente vazia, apenas uma sala circular com uma poça de água no meio e pilares em sua volta.";
             cout << "\nA porta de entrada então se fecha e você segue para o centro da sala.";
@@ -260,7 +260,8 @@ int main()
             cout << "\nEntão, após alguns segundo de silêncio, a saída se revela.";
         }
         
-        else if (escolhaIn == 2) { //JARDIM EXOTICO > PLANTA CARNIVORA
+        //JARDIM EXOTICO > PLANTA CARNIVORA
+        else if (escolhaIn == 2) { 
             cout << "\nVocê decide seguir pela brisa.\n\n";
             cout << "\nLogo entra em outra sala, e se encontra em um pântano.\nA mata é densa o que causa dificuldades ao atravessar o gramado inundado.";
             cout << "\nConforme anda pela água, você se depara com cadáveres, o que o deixa em alerta. O cheiro de podridão do pântano queimando suas narinas.";
@@ -308,16 +309,8 @@ int main()
                     cout << "\nFim da sua jornada...";
                     return 0;
                 }
-                
             }
-            
         }
-        
-        // else {
-        //     cout << "\nSem uma escolha seu guerreiro não seguiu uma direção e as portas se fecharam\nSua jornada acaba aqui...";
-        //     return 0;
-        // }
-        
     }
 
     //CONVERGENCIA
@@ -327,7 +320,8 @@ int main()
     cout << "\nEscolha um caminho: ";
     cin >> escolhaOut;
     
-    if (escolhaOut == 1) { //INFERIOR ESQUERDA / ESFINGE
+    //INFERIOR ESQUERDA / ESFINGE
+    if (escolhaOut == 1) { 
         
         cout << "\n\nAo seguir este caminho, você se depara com uma esfinge bloqueando o caminho.";
         cout << "\n'Responda minha charada corretamente e passará sem prejuízo. Erre, e sofrerá as consequências.'";
@@ -351,12 +345,14 @@ int main()
             }
         }
 
-        cout << "\n\nNovamente, você se encontra em uma bifurcação."; //ESFINGE > PADROES - ESQUELETOS
+         //ESFINGE > PADROES - ESQUELETOS
+        cout << "\n\nNovamente, você se encontra em uma bifurcação.";
         cout << "\n1 - Esquerda\n2 - Direita";
         cout << "\nEscolha seu caminho:";
         cin >> escolhaIn; 
 
-        if (escolhaIn == 1) { //ESFINGE > PADROES
+         //ESFINGE > PADROES
+        if (escolhaIn == 1) {
             cout << "\nAo final do corredor você se encontra em uma sala antiga, em sua parede, três imagens: \nUma gota\nUma chama\nUm furacão";
             cout << "\nNo chão da sala, dois quadrados estão destacados, cada um com uma imagem no centro.";
             cout << "\n1 - Uma pedra\n2 - Um raio";
@@ -376,7 +372,8 @@ int main()
             }
         }
         
-        else if (escolhaIn == 2) { //ESFINGE > ESQUELETOS
+        //ESFINGE > ESQUELETOS
+        else if (escolhaIn == 2) {
             cout << "\n\nSeguindo pelo caminho, você se depara com uma sala repleta de ossos. Montanhas de crânios se espalham pelo chão.";
             cout << "\nAo fundo da câmara, um único esqueleto em pé, protegendo uma tumba ornamentada. Ao te perceber, o esqueleto entra em posição de ataque, levantando sua espada.";
             cout << "\n1 - Atacar o esqueleto, focando em desmembrar-lo\n2 - Se defender do esqueleto, focando em chegar perto da tumba\n";
@@ -400,19 +397,22 @@ int main()
 
     }
     
-    else if (escolhaOut == 2) { //INFERIOR DIREITA / MOEDAS
+    //INFERIOR DIREITA / MOEDAS
+    else if (escolhaOut == 2) { 
         cout << "\nVocê chegou a um belo jardim com arbustos e árvores cheias de frutas, pássaros cantam ao fundo. Parece ser um lugar calmo.\n";
         cout << "\nNo centro do jardim, um chafariz, nele várias moedas cintilam ao fundo.";
         cout << "\n1 - Pegar uma moeda\n2 - Não pegar as moedas\n";
         cout << "\nEscolha: ";
         cin >> moedas;
         
-        cout << "\nVocê segue em frente e se depara com outra bifurcação, um caminho pela esquerda e outro seguindo em frente.\n"; //MOEDAS > NEVOA - BARQUEIRO
+        //MOEDAS > NEVOA - BARQUEIRO
+        cout << "\nVocê segue em frente e se depara com outra bifurcação, um caminho pela esquerda e outro seguindo em frente.\n"; 
         cout << "\n1 - Seguir pela esquerda\n2 - Seguir em frente\n";
         cout << "\nEscolha um caminho: ";
         cin >> escolhaIn;
     
-        if (escolhaIn == 1) { //MOEDAS > NEVOA
+        //MOEDAS > NEVOA
+        if (escolhaIn == 1) { 
             cout << "\n\nAo seguir pela equerda, quanto mais andava pelo corredor mais um estranha névoa encobria sua visão.";
             cout << "\nVocê chegou na próxima sala e não é possivel ver nada. Você tropeça em algo: uma tocha apagada.";
             cout << "\nPara facilitar seu caminho, você pega a tocha.\nEntão você nota algumas escritas no punho da tocha:";
@@ -436,8 +436,8 @@ int main()
             }
         }
         
-       
-        else if (escolhaIn == 2) {  //MOEDAS > BARQUEIRO
+       //MOEDAS > BARQUEIRO
+        else if (escolhaIn == 2) {  
             cout << "\nVocê decide então ir em frente. Após seguir parte do caminho se depara em uma caverna, em seu interior um gigantesco rio.";
             cout << "\nOlhando em sua volta avista um deck na borda da água. Um barco com uma figura encapuzada.";
             cout << "\nAo se aproximar do barco percebe que o rio está repleto de centenas de vultos flutuantes.";
@@ -469,12 +469,7 @@ int main()
                     cout << "\nVidas: " << countVida;
                 }
             }
-            
         }
-        
-        // else {
-        //     cout << "\nSem uma escolha seu guerreiro não seguiu uma direção e as portas se fecharam\nSua jornada acaba aqui...";
-        // }
     }
     
     //BOSS
