@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "Novo Perfil",
+    "Projects": [
+      {
+        "Path": "Servidor\\Servidor.vcxproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "cliente_automacao\\cliente_automacao.vcxproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]
